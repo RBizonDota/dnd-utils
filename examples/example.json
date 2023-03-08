@@ -1,0 +1,1602 @@
+{
+    "jsonType": "character",
+    "template": "default",
+    "name": {
+      "value": "Артур Де Гир"
+    },
+    "hiddenName": "Лютый Пол_0337185678",
+    "info": {
+      "charClass": {
+        "name": "charClass",
+        "label": "класс и уровень",
+        "value": "Изобретатель-стрелок"
+      },
+      "level": {
+        "name": "level",
+        "label": "уровень",
+        "value": 2
+      },
+      "background": {
+        "name": "background",
+        "label": "предыстория",
+        "value": ""
+      },
+      "playerName": {
+        "name": "playerName",
+        "label": "имя игрока",
+        "value": "Велес"
+      },
+      "race": {
+        "name": "race",
+        "label": "раса",
+        "value": "Человек"
+      },
+      "alignment": {
+        "name": "alignment",
+        "label": "мировоззрение",
+        "value": "Хаот-добрый"
+      },
+      "experience": {
+        "name": "experience",
+        "label": "опыт",
+        "value": 301
+      }
+    },
+    "subInfo": {
+      "age": {
+        "name": "age",
+        "label": "возраст",
+        "value": 19
+      },
+      "height": {
+        "name": "height",
+        "label": "рост",
+        "value": "178"
+      },
+      "weight": {
+        "name": "weight",
+        "label": "вес",
+        "value": "75"
+      },
+      "eyes": {
+        "name": "eyes",
+        "label": "глаза",
+        "value": "зеленые"
+      },
+      "skin": {
+        "name": "skin",
+        "label": "кожа",
+        "value": "обычноя"
+      },
+      "hair": {
+        "name": "hair",
+        "label": "волосы",
+        "value": "рыжие"
+      }
+    },
+    "spellsInfo": {
+      "base": {
+        "name": "base",
+        "label": "Базовая характеристика заклинаний",
+        "value": ""
+      },
+      "save": {
+        "name": "save",
+        "label": "Сложность спасброска",
+        "value": ""
+      },
+      "mod": {
+        "name": "mod",
+        "label": "Бонус атаки заклинанием",
+        "value": ""
+      }
+    },
+    "spells": {
+      "slots-1": {
+        "value": 2
+      },
+      "spell-1-0": {
+        "isReady": true
+      },
+      "spell-1-1": {
+        "isReady": true
+      },
+      "level-1-slot-1": {
+        "isChecked": true
+      },
+      "level-1-slot-0": {
+        "isChecked": true
+      }
+    },
+    "proficiency": 2,
+    "stats": {
+      "str": {
+        "name": "str",
+        "label": "Сила",
+        "score": 7,
+        "modifier": 0
+      },
+      "dex": {
+        "name": "dex",
+        "label": "Ловкость",
+        "score": 14,
+        "modifier": -5
+      },
+      "con": {
+        "name": "con",
+        "label": "Телосложение",
+        "score": 11,
+        "modifier": -5
+      },
+      "int": {
+        "name": "int",
+        "label": "Интеллект",
+        "score": 16,
+        "modifier": -5
+      },
+      "wis": {
+        "name": "wis",
+        "label": "Мудрость",
+        "score": 15,
+        "modifier": -5
+      },
+      "cha": {
+        "name": "cha",
+        "label": "Харизма",
+        "score": 14,
+        "modifier": -5
+      }
+    },
+    "saves": {
+      "str": {
+        "name": "str",
+        "isProf": false
+      },
+      "dex": {
+        "name": "dex",
+        "isProf": false,
+        "customModifier": null
+      },
+      "con": {
+        "name": "con",
+        "isProf": false
+      },
+      "int": {
+        "name": "int",
+        "isProf": false
+      },
+      "wis": {
+        "name": "wis",
+        "isProf": false
+      },
+      "cha": {
+        "name": "cha",
+        "isProf": false
+      }
+    },
+    "skills": {
+      "acrobatics": {
+        "baseStat": "dex",
+        "name": "acrobatics",
+        "label": "Акробатика"
+      },
+      "investigation": {
+        "baseStat": "int",
+        "name": "investigation",
+        "label": "Анализ",
+        "customModifier": null,
+        "isProf": 0
+      },
+      "athletics": {
+        "baseStat": "str",
+        "name": "athletics",
+        "label": "Атлетика",
+        "customModifier": null,
+        "isProf": 0
+      },
+      "perception": {
+        "baseStat": "wis",
+        "name": "perception",
+        "label": "Восприятие",
+        "customModifier": null,
+        "isProf": 0
+      },
+      "survival": {
+        "baseStat": "wis",
+        "name": "survival",
+        "label": "Выживание",
+        "customModifier": null,
+        "isProf": 0
+      },
+      "performance": {
+        "baseStat": "cha",
+        "name": "performance",
+        "label": "Выступление",
+        "customModifier": null,
+        "isProf": 0
+      },
+      "intimidation": {
+        "baseStat": "cha",
+        "name": "intimidation",
+        "label": "Запугивание",
+        "customModifier": null
+      },
+      "history": {
+        "baseStat": "int",
+        "name": "history",
+        "label": "История",
+        "isProf": 0
+      },
+      "sleight of hand": {
+        "baseStat": "dex",
+        "name": "sleight of hand",
+        "label": "Ловкость рук",
+        "customModifier": null
+      },
+      "arcana": {
+        "baseStat": "int",
+        "name": "arcana",
+        "label": "Магия",
+        "customModifier": null
+      },
+      "medicine": {
+        "baseStat": "wis",
+        "name": "medicine",
+        "label": "Медицина"
+      },
+      "deception": {
+        "baseStat": "cha",
+        "name": "deception",
+        "label": "Обман"
+      },
+      "nature": {
+        "baseStat": "int",
+        "name": "nature",
+        "label": "Природа"
+      },
+      "insight": {
+        "baseStat": "wis",
+        "name": "insight",
+        "label": "Проницательность",
+        "customModifier": null
+      },
+      "religion": {
+        "baseStat": "int",
+        "name": "religion",
+        "label": "Религия",
+        "customModifier": null
+      },
+      "stealth": {
+        "baseStat": "dex",
+        "name": "stealth",
+        "label": "Скрытность",
+        "customModifier": null
+      },
+      "persuasion": {
+        "baseStat": "cha",
+        "name": "persuasion",
+        "label": "Убеждение",
+        "customModifier": null
+      },
+      "animal handling": {
+        "baseStat": "wis",
+        "name": "animal handling",
+        "label": "Уход за животными"
+      }
+    },
+    "vitality": {
+      "hp-dice-current": {
+        "value": 2
+      },
+      "hp-dice-multi": {},
+      "initiative": {
+        "value": 0
+      },
+      "hp-current": {
+        "value": 17
+      },
+      "hp-temp": {},
+      "isDying": false,
+      "deathFails": 0,
+      "deathSuccesses": 0,
+      "speed": {
+        "value": "30"
+      },
+      "deathSuccess_0": {
+        "value": false
+      },
+      "hp-max": {
+        "value": 17
+      },
+      "hit-die": {
+        "value": "1к8"
+      },
+      "ac": {
+        "value": 4
+      }
+    },
+    "weaponsList": [
+      {
+        "id": "weapon-1678265405523",
+        "name": {
+          "value": "Оглушающий выстрел"
+        },
+        "mod": {
+          "value": "+0"
+        },
+        "dmg": {
+          "value": "Физический"
+        },
+        "isProf": true,
+        "ability": "dex"
+      },
+      {
+        "id": "weapon-1678269684348",
+        "name": {
+          "value": "Выстрел"
+        },
+        "mod": {
+          "value": "+0"
+        },
+        "dmg": {
+          "value": "Физический"
+        },
+        "ability": "dex",
+        "isProf": true,
+        "modBonus": {
+          "value": 1
+        }
+      }
+    ],
+    "weapons": {},
+    "text": {
+      "personality": {
+        "value": {
+          "data": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Хладнокровен"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Находчив"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Дорожит семьей"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Каратель"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "bonds": {
+        "value": {
+          "data": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "resource",
+                "attrs": {
+                  "id": "resource-1678265596827",
+                  "textName": "bonds"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "flaws": {
+        "value": {
+          "data": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Семья"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Использзование атакующих заклинаний самостоятельно"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Физически слаб"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "size": 10
+      },
+      "ideals": {
+        "value": {
+          "data": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Все в мире имеет цену и её надо заплатить"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Каждый получает ту реальность, которую заслуживает"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "size": 9
+      },
+      "prof": {
+        "value": {
+          "data": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Знание технологии строения огнестрельного оружия"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Знание  этикета людской аристократии континента Дикатена"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Знание этикета зверолюдей и орков"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Обширные познавния в религии"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Владение людским языком  Дикатена и Алакрии"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Владение языком зверолюдей кошачьего племени."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "equipment": {
+        "value": {
+          "data": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Револьвер \"Альт\" +3  шестизарядный"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "18 патронов 1 д 4"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "50 г пороха дымного( в патроне 5 грамм)"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "заготовки под патроны 12 шт"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Кожанная куртка-плащ "
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "allies": {
+        "value": {
+          "data": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Франц Де Гир (отец)  маг без ума от Всеславы"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Всеслава Де Гир(мать) мечница без ума от Франца"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Тессия Де Гир(старшая сестра) мечница жаждет справедливости, вспыльчива и сверхактивна, постоянно таскала Артура на тренировки"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Элизабет Де Гир(младшая сестра) маг Замкнута и апатична , предпочитает книги людям, "
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Гилен  вор напарница родителей из расы зверолюдов племени кошачьих  воительница с парными клинками хладнокровная и расчетная, помогала в обучении искусству меча детей, первая заметила что Артуру лучше сделать упор на скорость и выносливость чем дальше махать мечом в надежде угнаться за матерью и сестрой."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Астартас Орк товарищ родителей берсерк вспыльчивый"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Селена человек священница товарищ родителей, очень образованная и разумная женщина оказавшая большое влияние на Артура"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Ночной Сад - Гильдия основанная тайно Францем и Всеславой для наращивания мощи и влияния. Занимается добычей информации, заработком денег открывая предприятия и взращиванием талантливых простолюдинов."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Альфа, Бета, Гамма, Эпсилон - Имена позывные Девушек занимающих главные должности в Гильдии, "
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "size": 10
+      },
+      "background": {
+        "value": {
+          "data": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Родился вторым ребенком в семье аристократов героев войны. Хотя что мать гениальная фехтовальщица, что отец гениальный маг у второго ребенка не оказалось ни достаточной силы для оборудования мечом, ни достаточного запаса маны чтобы стать магом, Две имеющиеся у него сестры напротив показали талант сравнимый с родителями. Тессия освоило искусство меча матери а Элизабет  освоила науку отца и начала сама развивать её проводя исследования в области пространства и времени. Сына же заклеймили бесталанным ребенком и среди аристократии ходили разные порочащие его семью и его самого слухи, хотя никто не знал что успехи систер во многом произошли с подсказок умного и образованного брата. Далее в заметках"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "size": 9,
+        "customLabel": " "
+      },
+      "quests": {
+        "value": {
+          "data": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Получить заслуги которые принесут ему известность. Помочь голосу в голове"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "notes-1": {
+        "value": {
+          "data": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "У семьи мечников из которой вышла мать Артура был обычай отправлять своих детей в странствие без поддержки семьи (инкогнито, нельзя пользоваца фамилией). Начать свое странствие Артур решил с поездки на корабле, но внезапно некая энергия испортила спокойное море и в результате кораблекрушения Артур оказался на незнакомой земле. Да кроме этого все его запасы(в том числе золото) знатно оскуднели  а в голове поселилась некто назвавшаяся Косандрой, Эта личность попросила Артура о помощи, восстановить справедливость и Артур конечно же согласилса, ведь справедливость главный ориентир не только его семьи но и его самого"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph"
+              }
+            ]
+          }
+        }
+      },
+      "traits": {
+        "value": {
+          "id": "hover-toolbar-traits-9715723",
+          "data": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Стрельба из пистолета"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Создание магических и технических приспособлений, Инженерия"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph"
+              }
+            ]
+          }
+        }
+      },
+      "items": {
+        "value": {
+          "data": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Револьвер \"Альт\""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "notes-2": {
+        "value": {
+          "data": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "https://dnd.su/spells/157-disguise_self/",
+                          "target": "_blank",
+                          "class": "item-link"
+                        }
+                      },
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Маскировка [Disguise self]"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "text": "1 уровень, иллюзия"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Время накладывания:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " 1 действие"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Дистанция:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " На себя"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Компоненты:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " В, С"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Длительность:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " 1 час"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Классы:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " бард, волшебник, изобретатель, чародей"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Архетипы:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " домен обмана (жрец), сумрачный охотник (следопыт)"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Источник:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " «Player's handbook»"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Вы заставляете себя — включая одежду, доспехи, оружие и прочее имущество — выглядеть иначе, пока заклинание не окончится, или пока вы не окончите его преждевременно, действием. Вы можете выглядеть на 1 фут (30 сантиметров) выше или ниже, а также стать худым, толстым или получить среднее телосложение. Вы не можете менять основу тела, поэтому у новой формы должен быть такой же набор конечностей. Во всем остальном характер иллюзии определяете вы."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Изменения, вызванные этим заклинанием, не выдерживают проверку физическим исследованием. Например, если вы добавили к своему снаряжению шляпу, предметы будут проходить сквозь нее, и все, кто к ней прикоснутся, либо ничего не почувствуют, либо почувствуют вашу голову и волосы. Если вы становитесь худее, то рука того, кто к вам тянется, наткнется на вас на полпути, ещё в воздухе."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Для обнаружения того, что вы замаскированы, существо должно действием обследовать вашу внешность и преуспеть в проверке Интеллекта (Расследование) против вашей Сл заклинаний."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "size": 7
+      },
+      "notes-3": {
+        "value": {
+          "data": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "https://dnd.su/spells/195-detect_magic/",
+                          "target": "_blank",
+                          "class": "item-link"
+                        }
+                      },
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Обнаружение магии [Detect magic]"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "text": "1 уровень, прорицание (ритуал)"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Время накладывания:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " 1 действие"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Дистанция:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " На себя"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Компоненты:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " В, С"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Длительность:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " Концентрация, вплоть до 10 минут"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Классы:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " бард, волшебник, друид, жрец, изобретатель, паладин, следопыт, чародей"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Архетипы:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " домен магии (жрец), клятва смотрителей (паладин)"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Источник:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " «Player's handbook»"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Пока заклинание активно, вы чувствуете присутствие магии в пределах 30 футов. Если вы почувствовали за счет этого заклинания присутствие магии, вы можете действием увидеть слабую ауру вокруг видимого существа или предмета, несущего на себе магию, а также узнать школу этой магии, если она есть."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Заклинание проницает большую часть барьеров, но блокируется 1 футом камня, 1 дюймом обычного металла, тонким листом свинца или 3 футами дерева или земли."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "size": 10
+      },
+      "spells-level-1": {
+        "value": {
+          "data": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Обнаружение магии"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Маскировка"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "notes-4": {
+        "value": {
+          "data": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "https://dnd.su/spells/258-mending/",
+                          "target": "_blank",
+                          "class": "item-link"
+                        }
+                      },
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Починка [Mending]"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "text": "Заговор, преобразование"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Время накладывания:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " 1 минута"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Дистанция:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " Касание"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Компоненты:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " В, С, М (два магнетита)"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Длительность:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " Мгновенная"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Классы:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " бард, волшебник, друид, жрец, изобретатель, чародей"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Источник:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " «Player's handbook»"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Это заклинание чинит одно повреждение или разрыв на предмете, которого касаетесь, например, разорванное звено цепи, две половинки сломанного ключа, порванный плащ или протекающий бурдюк. Если повреждение или разрыв не больше 1 фута в любом измерении, вы чините его, не оставляя следов."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Это заклинание может физически починить магический предмет или Конструкта, но не может восстановить магию в таких предметах."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "size": 8
+      },
+      "spells-level-0": {
+        "value": {
+          "data": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Починка"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Сообщение"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "notes-5": {
+        "value": {
+          "data": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "https://dnd.su/spells/331-message/",
+                          "target": "_blank",
+                          "class": "item-link"
+                        }
+                      },
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Сообщение [Message]"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "text": "Заговор, преобразование"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Время накладывания:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " 1 действие"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Дистанция:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " 120 футов"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Компоненты:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " В, С, М (кусочек медной проволоки)"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Длительность:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " 1 раунд"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Классы:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " бард, волшебник, изобретатель, чародей"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "text": "Источник:"
+                  },
+                  {
+                    "type": "text",
+                    "text": " «Player's handbook»"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Вы указываете пальцем на существо, находящееся в пределах дистанции, и шепчете послание. Цель (и только цель) слышит его, и может ответить шепотом, который услышите только вы."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Вы можете использовать это заклинание сквозь твердые препятствия, если вы знакомы с целью и знаете, что она находится за барьером. Магическая тишина, 1 фут камня, 1 дюйм обычного металла, тонкий лист свинца или 3 фута дерева блокируют заклинание. Заклинание не обязано идти по прямой линии, и может огибать углы и проходить через отверстия."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "coins": {},
+    "resources": {
+      "resource-1678265596827": {
+        "id": "resource-1678265596827",
+        "name": "",
+        "current": 0,
+        "max": 1,
+        "location": "bonds"
+      }
+    },
+    "bonusesSkills": {},
+    "bonusesStats": {},
+    "conditions": [],
+    "inspiration": false,
+    "avatar": {
+      "jpeg": "https://lss-s3-files.s3.eu-north-1.amazonaws.com/avatar/6408614e07455375cc80fc98.jpeg?mod=1678273000350",
+      "webp": "https://lss-s3-files.s3.eu-north-1.amazonaws.com/avatar/6408614e07455375cc80fc98.webp?mod=1678273000327"
+    },
+    "proficiencyCustom": 0,
+    "id": "6408614e07455375cc80fc98"
+  }
