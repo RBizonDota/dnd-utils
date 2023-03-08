@@ -1,7 +1,7 @@
 import typing as t
 import pydantic
 
-from .utils import AllowedJSONFormatsEnum, parse_int_value, LONG_STORY_SHOT_STAT_LABELS_TO_DATA
+from .utils import AllowedJSONFormatsEnum, parse_int_value, LONG_STORY_SHOT_STAT_LABELS_TO_DATA, MAP_FORMAT_TO_EXTRACTOR
 
 
 class CharacterSubinfo(pydantic.BaseModel):
@@ -76,6 +76,12 @@ class Character(BaseCharacter):
         return char
 
     @classmethod
-    def from_json(cls, data: t.Dict, format: AllowedJSONFormatsEnum):
+    def from_json(cls, data: t.Dict, format: AllowedJSONFormatsEnum = AllowedJSONFormatsEnum.LONG_STORY_SHOT):
         if format == AllowedJSONFormatsEnum.LONG_STORY_SHOT:
             return cls._parse_longstoryshot(data)
+    
+    @classmethod
+    def from_file(cls, file_path: str, format: AllowedJSONFormatsEnum = AllowedJSONFormatsEnum.LONG_STORY_SHOT):
+        with open(file_path, 'r') as f:
+            data = MAP_FORMAT_TO_EXTRACTOR[format](f)
+        return cls.from_json(data, format)

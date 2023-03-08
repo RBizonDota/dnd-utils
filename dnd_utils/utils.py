@@ -1,9 +1,15 @@
+import json
+
 from typing import Union, Optional
 from enum import Enum
 
 
 class AllowedJSONFormatsEnum(str, Enum):
     LONG_STORY_SHOT = "longstoryshot"
+
+MAP_FORMAT_TO_EXTRACTOR = {
+    AllowedJSONFormatsEnum.LONG_STORY_SHOT: lambda f: json.load(f)
+}
 
 
 def parse_int_value(val: Optional[Union[int, str]]):
