@@ -20,6 +20,14 @@ class CharacterStats(pydantic.BaseModel):
     wisdom: int = 10 # Мудрость
     charisma: int = 10 # Харизма
 
+class CharacterStatMods(pydantic.BaseModel):
+    strength: int = 0 # Сила
+    dexterity: int = 0 # Ловкость
+    constitution: int = 0 # Телосложение
+    intelligence: int = 0 # Интеллект
+    wisdom: int = 0 # Мудрость
+    charisma: int = 0 # Харизма
+
 
 class CharacterSkills(pydantic.BaseModel):
     acrobatics: int = 0 # Акробатика
@@ -44,16 +52,16 @@ class CharacterSkills(pydantic.BaseModel):
 
 class BaseCharacter(pydantic.BaseModel):
     name: str
-    
-class Character(BaseCharacter):
     char_class: str
     level: int
     race: str
     alignment: t.Optional[str]
-    # experience: t.Optional[int]
     sub_info: t.Optional[CharacterSubinfo]
     stats: CharacterStats
+    stat_mods: CharacterStatMods
     skills: CharacterSkills
+    
+class Character(BaseCharacter):
 
     @classmethod
     def _parse_longstoryshot(cls, data: t.Dict):
@@ -68,6 +76,9 @@ class Character(BaseCharacter):
             },
             stats={
                 LONG_STORY_SHOT_STAT_LABELS_TO_DATA[k]:v["score"] for k,v in data["stats"].items()
+            },
+            stat_mods={
+                LONG_STORY_SHOT_STAT_LABELS_TO_DATA[k]:parse_int_value(v.get("customModifier")) for k,v in data["saves"].items()    
             },
             skills={
                 k:parse_int_value(v.get("customModifier")) for k,v in data["skills"].items()
@@ -85,3 +96,8 @@ class Character(BaseCharacter):
         with open(file_path, 'r') as f:
             data = MAP_FORMAT_TO_EXTRACTOR[format](f)
         return cls.from_json(data, format)
+
+    def get_stat_mod(self, stat_name: str) -> int:
+        stat_score = getattr(self.stats, stat_name)
+        mod_score = getattr(self.stat_mods, stat_name)
+        return (stat_score-10)//2+mod_score

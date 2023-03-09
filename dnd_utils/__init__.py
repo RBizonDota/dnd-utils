@@ -1,5 +1,7 @@
 from .character import BaseCharacter, Character
-from .manager import CharacterManager
+from .out_managers.manager import TextManager
 
 
-__all__ = ["BaseCharacter", "Character", "CharacterManager"]
+__app_name__ = "dnd_utils"
+__version__ = "0.0.1"
+__all__ = ["BaseCharacter", "Character", "TextManager"]

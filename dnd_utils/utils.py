@@ -3,6 +3,8 @@ import json
 from typing import Union, Optional
 from enum import Enum
 
+from logging import config
+
 
 class AllowedJSONFormatsEnum(str, Enum):
     LONG_STORY_SHOT = "longstoryshot"
@@ -30,3 +32,26 @@ LONG_STORY_SHOT_STAT_LABELS_TO_DATA = {
     "wis": "wisdom",
     "cha": "charisma"
 }
+
+
+log_config = {
+    "version":1,
+    "root":{
+        "handlers" : ["console"],
+        "level": "DEBUG"
+    },
+    "handlers":{
+        "console":{
+            "formatter": "std_out",
+            "class": "logging.StreamHandler",
+            "level": "DEBUG"
+        }
+    },
+    "formatters":{
+        "std_out": {
+            "format": "[%(levelname)s] %(asctime)s | %(name)s:%(lineno)d | %(message)s",
+            "datefmt":"%Y-%m-%d %I:%M:%S"
+        }
+    },
+}
+config.dictConfig(log_config)

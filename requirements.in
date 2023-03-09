@@ -1,4 +1,9 @@
+# Base
 pydantic
 
+# CLI
+tabulate
+
+# Tests
 pytest
 pytest-cov
