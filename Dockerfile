@@ -6,4 +6,4 @@ RUN pip install -r /code/requirements.txt
 
 WORKDIR /code
 
-CMD [ "python", "-m", "dnd_utils" ]
+CMD [ "python", "-m", "dnd_utils", "-ll", "debug" ]
