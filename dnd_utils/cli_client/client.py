@@ -1,14 +1,14 @@
 import cmd
 import logging
 import os
-from typing import List, Optional
+from typing import List, Optional, Type
 
 from tabulate import tabulate
 
 from dnd_utils import Character, TextManager
 from dnd_utils.cli_client.schemas import CharActionEnum
 from dnd_utils.utils import LogLevel
-
+from dnd_utils.cli_client.commands import BaseCommand, CharCommand
 
 class CLIClient(cmd.Cmd):
     """Simple command processor example."""
@@ -29,16 +29,15 @@ class CLIClient(cmd.Cmd):
         self.logger = logging.getLogger()
         self.logger.setLevel(log_level.value.upper())
 
-    def _print_chars_table(self):
-        char_attrs = [TextManager(ch).get_short_info() for ch in self._party]
-        print(
-            tabulate(
-                char_attrs,
-                headers=["Name", "Class", "Level", "Alignment"],
-                tablefmt="orgtbl",
-            )
-        )
-        print(f"\n Total: {len(self._party)} characters")
+        self._commands = {}
+
+    def get_command(self, command: Type[BaseCommand]):
+        cmnd = self._commands.get(command.__name__)
+        if not cmnd:
+            cmnd = command(self._party, self._selected_char, self.logger)
+            self._commands[command.__name__] = cmnd
+            return cmnd
+        return cmnd
 
     def precmd(self, line: str):
         print()
@@ -50,41 +49,11 @@ class CLIClient(cmd.Cmd):
             print("=" * self._cols)
         return stop
 
-    def _add_chars(self, *args):
-        if not len(args):
-            print("At least one path must be provided")
-        chars = []
-        try:
-            for file_path in args:
-                ch = Character.from_file(file_path)
-                self.logger.debug(f"Got char {ch}")
-                print(f"Character '{ch.name}' successfully imported")
-                chars.append(ch)
-        except FileNotFoundError as e:
-            print(f"File not found: {e}")
-        self._party.extend(chars)
-
     def do_char(self, line: str):
-        action, *args = parse(line)
-        if not action:
-            print("Action must be provided")
-            return
-        if action == CharActionEnum.LIST:
-            self._print_chars_table()
-            return
-        if action == CharActionEnum.ADD:
-            self._add_chars(*args)
-            return
-
-        print(f"Unknown operation: '{action}'")
+        self.get_command(CharCommand).onecmd(line)
 
     def do_exit(self, line):
         return True
 
     def do_EOF(self, line):
         return True
-
-
-def parse(arg):
-    "Convert a series of zero or more numbers to an argument tuple"
-    return arg.split()

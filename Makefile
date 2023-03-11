@@ -1,7 +1,7 @@
 cli:
 	docker compose run app
 
-tests:
+pytest:
 	docker compose run app pytest -vv --cov
 
 format_code:
