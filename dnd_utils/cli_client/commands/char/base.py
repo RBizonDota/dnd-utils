@@ -3,7 +3,7 @@ from builtins import all
 from tabulate import tabulate
 
 from dnd_utils import TextManager, Character
-from dnd_utils.cli_client.commands.base import BaseCommand
+from dnd_utils.cli_client.commands.base import BaseCommand, BaseClientMixin
 
 
 class CharCommand(BaseCommand):
@@ -45,3 +45,12 @@ class CharCommand(BaseCommand):
         el_to_rm = self._party[int(args[0])]
         self._party.remove(el_to_rm)
         print(f"Character {el_to_rm.name} successfully removed")
+
+
+class CharClientMixin(BaseClientMixin):
+    def do_char(self, line: str):
+        """Documenting function"""
+        self.get_command(CharCommand).onecmd(line)
+
+    def help_char(self):
+        print("API to manipulate characters")

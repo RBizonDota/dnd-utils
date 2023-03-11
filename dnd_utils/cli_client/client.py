@@ -1,22 +1,20 @@
 import cmd
 import logging
 import os
-from typing import List, Optional, Type
+from typing import List, Optional
 
-from tabulate import tabulate
-
-from dnd_utils import Character, TextManager
-from dnd_utils.cli_client.schemas import CharActionEnum
+from dnd_utils import Character
 from dnd_utils.utils import LogLevel
-from dnd_utils.cli_client.commands import BaseCommand, CharCommand
+from dnd_utils.cli_client.commands import CharClientMixin
 
-class CLIClient(cmd.Cmd):
+
+class CLIClient(cmd.Cmd, CharClientMixin):
     """Simple command processor example."""
 
     prompt = "> "
 
-    def __init__(self, log_level: Optional[LogLevel]):
-        super(CLIClient, self).__init__()
+    def __init__(self, log_level: Optional[LogLevel], *args, **kwargs):
+        super(CLIClient, self).__init__(*args, **kwargs)
         self._selected_char: Optional[Character] = None
         self._party: List[Character] = []
 
@@ -31,14 +29,6 @@ class CLIClient(cmd.Cmd):
 
         self._commands = {}
 
-    def get_command(self, command: Type[BaseCommand]):
-        cmnd = self._commands.get(command.__name__)
-        if not cmnd:
-            cmnd = command(self._party, self._selected_char, self.logger)
-            self._commands[command.__name__] = cmnd
-            return cmnd
-        return cmnd
-
     def precmd(self, line: str):
         print()
         self.logger.debug(f"Got command: {line}")
@@ -48,9 +38,6 @@ class CLIClient(cmd.Cmd):
         if not stop:
             print("=" * self._cols)
         return stop
-
-    def do_char(self, line: str):
-        self.get_command(CharCommand).onecmd(line)
 
     def do_exit(self, line):
         return True
