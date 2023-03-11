@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  app:
+    container_name: dnd_utils_client
+    build: .
+    volumes:
+      - ./:/code
